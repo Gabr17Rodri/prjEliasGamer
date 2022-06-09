@@ -1,61 +1,51 @@
-<div class="container-fluid bg-light">
-    <div class="col-4 mx-auto py-5">
-        <h2  class="mb-4">
+<div class="container-fluid bg-light py-5">
+    <div class="col-5 mx-auto py-5">        
+        <h4 class="mb-3 fw-bold">
             Adicionar novo produto
-        </h2>
+        </h4>        
 
-        <div class="d-flex mb-5">
-            <div class="quadrado bg-white text-center py-4 px-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
-                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-                    <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-                </svg>
+        <div class="form-floating mb-3 text-secondary">            
+            <input type="text" class="form-control rounded-0 border-0 border-bottom" id="imagem" placeholder="URL da imagem">    
 
-                <div>
-                    Arraste para adicionar uma imagem para o produto
-                </div>
-            </div> 
-    
-            <div class="letra">
-                <p>
-                    Ou
-                </p>
-            </div>
+            <label for="imagem">
+                URL da imagem
+            </label>        
+        </div>     
 
-            <div class="ms-auto">
-                <button class="btn-login" routerLink="login">
-                    Procure no seu computador
-                </button>
-            </div>
-        </div>
+        <div class="form-floating mb-3 text-secondary">            
+            <input type="text" class="form-control rounded-0 border-0 border-bottom" id="categoria" placeholder="Categoria">            
+            
+            <label for="categoria">
+                Categoria
+            </label>        
+        </div>     
 
-        <div class="form-floating mb-3 text-secondary"> 
-            <input type="text" class="form-control rounded-0 border-0 border-bottom" id="name" placeholder="Nome do produto">
-    
-            <label for="name">
+        <div class="form-floating mb-3 text-secondary">
+            <input type="text" class="form-control rounded-0 border-0 border-bottom" id="produto" placeholder="Nome do produto">            
+            
+            <label for="produto">
                 Nome do produto
-            </label>
-        </div>
-    
-        <div class="form-floating mb-3 text-secondary"> 
-            <input type="number" class="form-control rounded-0 border-0 border-bottom" id="preco" placeholder="Preço do produto">
-    
+            </label>       
+        </div>        
+        
+        <div class="form-floating mb-3 text-secondary">            
+            <input type="number" class="form-control rounded-0 border-0 border-bottom" id="preco" placeholder="Preço do produto">            
+            
             <label for="preco">
                 Preço do produto
-            </label>
-        </div>
+            </label>        
+        </div>      
 
-        <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Descrição do produto" id="descricao">
-            </textarea>
-
+        <div class="form-floating mb-3 text-secondary">            
+            <textarea class="form-control rounded-0 border-0 border-bottom" id="descricao" placeholder="Descrição do produto"></textarea>            
+            
             <label for="descricao">
                 Descrição do produto
-            </label>
-        </div>
-    
-        <button class="btn btn-primary w-100 py-3 rounded-0">
+            </label>        
+        </div>        
+        
+        <button routerLink="/catalogo" class="btn btn-primary w-100 py-3 rounded-0">
             Adicionar produto
-        </button>
+        </button>    
     </div>
 </div>
