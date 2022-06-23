@@ -16,13 +16,19 @@ export class CaixinhaEdicaoComponent implements OnInit {
     preco: 0,
     imagem: ''
   };
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
   }
 
   excluirProduto(idProduto: number){
     const url = "http://lucasreno.kinghost.net/loja/produto/" + idProduto;
-    this.http.delete(url).subscribe();
+    this.http.delete(url).subscribe(
+      resposta => {
+        window.location.reload();
+      }
+    );
   }
 }
